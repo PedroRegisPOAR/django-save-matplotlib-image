@@ -1,0 +1,17 @@
+{% extends "savingimages/header.html" %}
+
+{% block content %}
+
+<center>
+	<img src="{{ last_plot.image.url }}"\>
+</center>
+
+<center>
+    <form action="/create_image_and_show/" method="post">{% csrf_token %}
+        <div class="button">
+            <button type="submit"> Create another matplotlib image. </button>
+        </div>
+    </form>
+</center>
+
+{% endblock %}
