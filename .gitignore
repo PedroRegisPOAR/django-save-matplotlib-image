@@ -4,3 +4,4 @@
 /tcl/*
 pip-selfcheck.json
 /project/db.sqlite3
+*.pyc
